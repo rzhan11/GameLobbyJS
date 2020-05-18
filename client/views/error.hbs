@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <meta charset="utf-8">
+    <title>Error</title>
+</head>
+<body>
+    <h1>Error</h1>
+    <p>{{{errorMessage}}}</p>
+    <button id="to-home-button">Back to home</button><br>
+
+    <script type="text/javascript">
+        var toHomeButton = document.getElementById("to-home-button");
+        toHomeButton.onclick = function () {
+            window.location.href = "/";
+        };
+
+    	// force focus on button
+    	toHomeButton.focus();
+    	toHomeButton.onblur = function(e) {
+    		toHomeButton.focus();
+    	};
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <title>Home - Hello</title>
+</head>
+
+<body>
+	<div class="home-page-top" align="center">
+        <span id="homepage-title-top">Hello</span>
+	</div>
+
+	<div class="home-page-bot" align="center">
+        <div>
+    		<input id="username-textbox" type="textbox"><br>
+            <span id="homepage-title-bot">(press enter to join lobby)</span>
+        </div>
+    </div>
+    <p id="default-lobby-id-text" hidden>{{{defaultLobbyID}}}</p>
+
+
+	<script src="/socket.io/socket.io.js"></script>
+    <script data-main="js/home" src="js/modules/require.js"></script>
+</body>
+</html>

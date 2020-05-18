@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel='shortcut icon' type='image/x-icon' href='images/favicon.ico' />
+    <meta charset="utf-8">
+    <title>Room - Hello</title>
+</head>
+<body>
+
+	<div>
+		<p>
+            Room: {{{locationID}}} <br>
+            Username: {{{id}}}
+        </p>
+        <button id="back-to-lobby-button">Back to lobby</button>
+        <p></p>
+	</div>
+
+    <div id="user-list-div">
+        <table id="user-table">
+        </table>
+    </div>
+    <br>
+
+    <div>
+        Number of rounds: <select id="numRoundsToWin-select"></select> <br>
+        Time per round: <select id="totalRoundTime-select"></select> <br>
+    </div>
+    <br>
+
+    <button id="start-game-button">Start Game</button> <br>
+
+
+	<script src="/socket.io/socket.io.js"></script>
+    <script data-main="js/room" src="js/modules/require.js"></script>
+</body>
+</html>
